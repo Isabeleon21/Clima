@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,29 +12,32 @@
     <link rel="stylesheet" href="src/styles.css" />
     <title>Pringles Weather App</title>
   </head>
+
   <body>
+
        <img
       class="pringles-logo"
       src="src/images/1639026343844.png"
       alt="PringlesLogo"
-    />
+      />
        <div class="pringles-clima">
-      <header>
-        <form class="search-form">
+
+     
+
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             required
+            id="search-form-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
-      </header>
 
-      <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Dublin</h1>
+            <h1 class="weather-app-city" id="city">Dublin</h1>
             <p class="weather-app-details">
               Tuesday 10:59, scatterd clouds
               <br />
@@ -47,7 +50,7 @@
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
-      </main>
+      
 
     <footer>
       Coded by
@@ -55,9 +58,9 @@
       code based on
       <a href="https://github.com/Isabeleon21/Clima" target="_blank">GitHub</a>
       and website based on
-      <a href="https://isabel-clima-app.netlify.app/" target="_blank"
-        >Netlify</a
-      >
+      <a href="https://isabel-clima-app.netlify.app/" target="_blank">Netlify</a>
     </footer>
-  </body>
+
+     <script src="src/index.js"></script>
+  </body>  
 </html>
