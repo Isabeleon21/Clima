@@ -3,26 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Isa 🦁 Clima App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Pringles Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city" required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Dublin</h1>
-        <p>
-          Monday 14:06, cloudy
-          <br />
-          Humidy: 88%, Wind 8.23km/h
-        </p>
-      </div>
-      <div>17 °C 🌤️</div>
-    </main>
+       <img
+      class="pringles-logo"
+      src="src/image/1635746373840.png"
+      alt="PringlesLogo"
+    />
+       <div class="pringles-clima">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Dublin</h1>
+            <p class="weather-app-details">
+              Tuesday 10:59, scatterd clouds
+              <br />
+              Humidity: <strong>66%</strong>, Wind: <strong>3.13km/h</strong>
+            </p>
+          </div>
+          <div class="app-temperature-container">
+            <div class="weather-app-temp-icon">🌥</div>
+            <div class="weather-app-value">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
+        </div>
+      </main>
+
     <footer>
       Coded by
       <a href="https://github.com/Isabeleon21" target="_blank">Isabel 🦁</a>

@@ -1,0 +1,86 @@
+body {
+  background: #ea002a;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+a {
+  color: #ea002a;
+}
+.pringles-logo {
+  padding: 30px 0 0 30px;
+  max-width: 100px;
+  max-height: 50%;
+}
+.pringles-clima {
+  background: #880146;
+  max-width: 600px;
+  margin: 45px auto;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+  padding: 30px;
+}
+header {
+  border-bottom: 1px solid #ea002a;
+  padding: 0 0 30px 0;
+}
+.search-form-input {
+  background-color: white;
+  border-radius: 6px;
+  width: 80%;
+  padding: 15px 20px;
+  font-size: 16px;
+  color: #ea002a;
+}
+.search-form-button {
+  background: #ffc420;
+  font-family: "Titan One", sans-serif;
+  font-size: 16px;
+  color: black;
+  padding: 15px 20px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 6px;
+}
+main {
+  padding: 30px 0;
+}
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-app-city {
+  font-family: "Titan One", sans-serif;
+  color: white;
+  font-size: 38px;
+  line-height: 48px;
+}
+.weather-app-details {
+  font-size: 16px;
+  line-height: 20px;
+}
+.weather-app-details strong {
+  color: #ffc420;
+}
+.app-temperature-container {
+  display: flex;
+}
+.weather-app-temp-icon {
+  font-size: 88px;
+  margin-top: 22px;
+}
+.weather-app-value {
+  font-family: "Titan One", sans-serif;
+  font-size: 88px;
+  font-weight: bold;
+}
+.weather-app-unit {
+  margin-top: 16px;
+  font-size: 28px;
+}
+footer {
+  border-top: 1px solid #ea002a;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-family: "Signika Negative", sans-serif;
+  font-size: 13px;
+}
