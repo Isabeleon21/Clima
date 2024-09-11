@@ -4,7 +4,7 @@ body {
   color: white;
 }
 a {
-  color: #ea002a;
+  color: #ffc420;
 }
 .pringles-logo {
   padding: 30px 0 0 30px;
@@ -71,10 +71,10 @@ main {
 .weather-app-value {
   font-family: "Titan One", sans-serif;
   font-size: 88px;
-  font-weight: bold;
+  line-height: 1.7;
 }
 .weather-app-unit {
-  margin-top: 16px;
+  margin-top: 30px;
   font-size: 28px;
 }
 footer {
