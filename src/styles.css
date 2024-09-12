@@ -65,8 +65,9 @@ main {
   display: flex;
 }
 .weather-app-temp-icon {
-  font-size: 88px;
-  margin-top: 22px;
+  width: 88px;
+  height: 88px;
+  margin-top: 35px;
 }
 .weather-app-value {
   font-family: "Titan One", sans-serif;
