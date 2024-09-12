@@ -56,7 +56,30 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+<div class="forecast-day">
+        <div class="date-forecast">${day}</div>
+        <div class="icon-forecast">☀️</div>
+        <div class="temps-forecast"><strong>16º</strong>
+       <div class="temp-forecast">11º</div>
+</div>       
+</div>
+`;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
 
 searchCity("Dublin");
+displayForecast();
