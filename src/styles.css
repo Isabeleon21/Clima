@@ -4,7 +4,7 @@ body {
   color: white;
 }
 a {
-  color: #ffc420;
+  color: #23bdf2;
 }
 .pringles-logo {
   padding: 30px 0 0 30px;
@@ -59,7 +59,7 @@ main {
   line-height: 20px;
 }
 .weather-app-details strong {
-  color: #ffc420;
+  color: #23bdf2;
 }
 .app-temperature-container {
   display: flex;
@@ -78,6 +78,36 @@ main {
   margin-top: 30px;
   font-size: 28px;
 }
+.forecast-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.date-forecast {
+  font-family: "Titan One", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.icon-forecast {
+  text-align: center;
+  font-size: 50px;
+}
+.temps-forecast {
+  text-align: center;
+  color: #ffc420;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.temps-forecast strong {
+  padding: 0 10px;
+}
+.temp-forecast {
+  padding: 0 10px;
+}
+
 footer {
   border-top: 1px solid #ea002a;
   padding: 30px 0 0 0;
