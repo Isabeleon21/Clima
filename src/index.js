@@ -17,7 +17,9 @@ function refreshWeather(response) {
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   dateElement.innerHTML = formatDate(date);
-  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-temp-icon"/>`;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-temp-ion"/>`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -56,6 +58,12 @@ function searchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "01btdd9b12oabf9004aa243803e97c7e";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
@@ -82,4 +90,5 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", searchSubmit);
 
 searchCity("Dublin");
+
 displayForecast();
